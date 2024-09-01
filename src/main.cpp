@@ -78,6 +78,7 @@ int server(int argc, char* argv[]){
       asio::write(sock, asio::buffer(message), ignored_error);
     }
   }
+
   catch(std::exception& e){
     std::cerr << e.what() << std::endl;
   }
